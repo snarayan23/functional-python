@@ -41,7 +41,7 @@ def threes(n):
     >>> threes(50)
     [3, 13, 23, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 43]
     '''
-    return [x for x in range(n+1) if 3 in str(x)]
+    return [x for x in range(n+1) if '3' in str(x)]
 
 
 def small_words(text):
@@ -79,7 +79,7 @@ def squares(n):
     >>> squares(10)
     [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
     '''
-    return list(map(lambda x: x * x, range(n+1)))
+    return list(map(lambda x: x * x, range(1, n+1)))
 
 
 def lengths(strings):
